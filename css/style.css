@@ -3,96 +3,211 @@
 	padding: 0px;
 }
 body{
-	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+	font-family: roboto;
 }
+
 header {
-	height: 150px;
+	height: 72px;
 	width: 100%;
-	background-color: #e21515;
+	padding: 0 8%;
+	background-color: #fbfbfb;
 	display: flex;
-	flex-direction: column;
-	
-	/*float: left;*/
-	/*margin-bottom: 30px;*/
+	justify-content:space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
 }
+
+#nombre {
+	font-family: "Montserrat";
+	font-size: 18px;
+	letter-spacing: 1pt;
+    font-weight: normal;
+	line-height: 20px;
+}
+#job {
+	font-family: "Montserrat";
+	font-size: 18px;
+	letter-spacing: 0,8pt;
+	font-weight: lighter;
+	color: rgb(173, 173, 173);
+	margin-left: 10px;
+}
+
 .nav{
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
+	font-family: "Montserrat";
 }
+.navigation {
+	color: blueviolet;
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+	letter-spacing: normal;
+	margin-left: 30px;
+}
+a{
+	color:rgb(179, 179, 179);
+	
+}
+a:hover {
+	text-decoration: none; 
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+	letter-spacing: normal;
+	color:rgb(63, 63, 63);
+	}
+	
+.intro {
+	padding-left: 8%;
+	padding-right:8%;
+	padding-top:10%;
+	padding-bottom:9%;
+	background: #f7f7f7;
+}
+
 .text-presentation {
-	/*font-family: Helvetica Neue;*/
-	font-weight: 70;
-	font-size: 25px;
+	height: 300px;
+	width: 100%;
+	font-family: "Montserrat";
+	font-weight: lighter;
+	font-size: 35px;
 	text-align: center;
 	letter-spacing: 1pt;
-	line-height: 30px;
-	margin-top: -10px;
-	background: #fafafa;
-	padding-bottom: 20px;
-}
-.logo {
-	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-		font-size: 16px;
-		letter-spacing: 5pt;
-    font-style: normal;
-    font-weight: 400;
-		line-height: 22px;
-		margin-top: 50px;
-		margin-left: 30px;
-		float: left;
-}
-.menu {
-	font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
-  font-size: 16px;
-	letter-spacing: 2pt;
-	
-
-}
-.logo-page {
-	/*width:90px;
-	height:67px;
-	margin-left: auto;
-	margin-right: auto;*/
-	margin-top: 30px;
-	padding-left:50px;
-	
-
+	line-height: 45px;
+	padding-top: 105px;
+	padding-left: 70px;
+	padding-right: 70px;
 }
 
-.parrafo{
-	font-size: 20px;
-}
 
-.parrafo {
-	text-align: center;
-}
 
-#card-article-container{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+.main {
+	max-width: 1000px;
+	margin: auto;
+  }
+  
+
+.row {
 	width: 100%;
-	height: 500px;
-	margin-top: 24px;
-}
+	height: 100%;
+	margin: 0px 0px;
+	padding-top:40px;
+	justify-content:center;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
 
-.card-article { 
-	width: 670px;
-	height: 385px;
-	border-radius: 3px;
-	box-shadow: 0px 2px 5px #fafafa;
-	transition: all 0.17s;
-}
+.column {
+	width: 85%;
+	/* height: 360px; */
+	display: flex;
+	justify-content: space-between;	
+	/* flex-wrap: wrap; */
+	/* align-content:flex-start; */
+	align-items:center;	
+	padding: 0px;
+  }
+ 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Content */
+.content {
+	display: flex;
+	width: 48%;
+	/* height: 100%; */
+	position:relative;
+	align-items:center;
+  }
+	
+	.content:hover > .article-text{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		color:rgb(2, 2, 2);
+		font-size: 22px;
+		text-align: center;
+		z-index: 20;	
+		flex-direction: column;
+	}
 
-.card-article:hover { 
-	transition: all 0.17s;
-	transform: scale(1.02);
-	background: wheat;
-	box-shadow: 0px 5px 10px rgba(107, 107, 107, 0.35);
-	cursor: grab
-}
+	.content:hover > .hover-color{
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color:rgb(0, 255, 149);
+		opacity: 0.5;
+		cursor: grab;
+	}
 
+
+
+	
+
+	.hover-color{
+	display:none;
+	}
+
+	.article-text{
+		display:none;
+		}
+
+	.content img {
+		width:100%;
+	}
+
+	.salto-de-texto{
+		/* margin-top: 50px; */
+	}
+	#card-article-container{
+		background-color:rgb(225, 188, 65);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		
+	}
+	.card-article { 
+		width: 567px;
+		height: 360px;
+		border-radius: 3px;
+		transition: all 0.17s;
+		background-color: blue;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.card-article:hover { 
+		transition: all 0.17s;
+		background-color: rgb(0, 190, 117);
+		cursor: grab;
+	}
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+	.column {
+	  width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column {
+	  width: 100%;
+	}
+  }
+
+	
 #footer { 
 	font-family: Helvetica Neue;
 	font-weight: 70;
