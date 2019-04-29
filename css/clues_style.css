@@ -70,13 +70,14 @@ a:hover {
 	width: 100%;
     height: 500px;
     background-image: url(../img/portada_clues.jpg);
-    background-repeat: no-repeat;
-    background-color: blueviolet;
-    margin-top: 72px;
-    align-items: center;
-    background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
     background-position: right;
     position: relative;
+    /* background-color: blueviolet; */
+    margin-top: 72px;
+    align-items: center;
+   
 }
 
 .presentation {
@@ -150,7 +151,7 @@ a:hover {
 	align-items:center;
   }
 
-.section_skills_tools {
+.skills_tools {
 	display: flex;
 	width:100%;
 	height: 300px;
@@ -166,7 +167,7 @@ a:hover {
 }
 
 
-.section_tittle {
+.tittle_text{
 	height: 40px;
 	font-family: "roboto";
 	font-weight: normal;
@@ -174,10 +175,10 @@ a:hover {
 	/* background-color: aqua; */
 }
 
-.section_subtittle_container{
+.subtittle_container{
 	display: flex;
 	align-items: center;
-
+	/* background-color: blanchedalmond; */
 }
 .rectangle{
 	width: 24px;
@@ -185,7 +186,7 @@ a:hover {
 	background-color: rgb(0, 255, 255);
 }
 
-.section_subtittle {
+.subtittle_text {
 	display: flex;
 	align-items: center;
 	/* background-color: aqua; */
@@ -193,16 +194,16 @@ a:hover {
 	margin-left: 10px;
 	font-family: "Montserrat";
 	font-weight: medium;
-	font-size: 11pt;
+	font-size: 10pt;
 	letter-spacing: 1px;
 	color: #9696A6;
 }
 .section_text{
-	color: rgb(36, 36, 36);
+	color: rgb(102, 102, 102);
 	font-size: 16px;
-	font-family: sans-"roboto";
-	line-height: 22px;
-	font-weight: regular; 
+	font-family: sans-"open-sans";
+	line-height: 24px;
+	font-weight: normal; 
 	letter-spacing: 0px;
 }
 
@@ -224,20 +225,99 @@ a:hover {
 	font size: 16px; 
 	margin-right: 20%;
 	/* background-color: red; */
-	list-style-type: disc;
+	list-style-type: circle;
 }
-.section_UX {
+
+
+.research {
 	width: 100%;
-	height: 400px;
-	/* background-color: rgb(163, 36, 36); */
+	height: 500px;
+	background-color: rgb(243, 243, 243);
 	display: flex;
-	align-items: center;
+	/* justify-content: flex-start; */
+	/* align-items: center; */
 	padding-left: 8%;
 	padding-right: 8%;
+	padding-top:60px;
+	padding-bottom: 60px;
 }
-.total_screem_img {
+.research_container{
+	width: 65%;
+	/* background-color:pink;  */
+	margin-right: 8%;
+}
+#img_research{
+	width: 50%;
+	/* background-image: url(http://placekitten.com/g/200/300); */
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: left;
+    /* position: relative; */
+	background-color:rgb(158, 158, 158); 
+	/* margin-right: 4%; */
+}
+.user_persona {
+	width: 100%;
+	height: 600px;
+	/* background-color: rgb(243, 243, 243); */
+	display: flex;
+	/* justify-content: flex-start; */
+	/* align-items: center; */
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top:60px;
+}
+.persona_container{
+	width: 20%;
+	/* background-color:pink;  */
+	margin-right: 4%;
+}
+#img_persona{
+	width: 80%;
+	background-image: url(http://placekitten.com/g/200/300);
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: left;
+    /* position: relative; */
+	/* background-color:rgb(76, 88, 247);  */
+	/* margin-right: 4%; */
+}
+.flujos_trabajo {
+	width: 100%;
+	height: 550px;
+	/* background-color: rgb(175, 55, 55); */
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* align-items: center; */
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 50px;
+}
+.flujos_img {
 	width: 100%;
 	/* background-color: rgb(241, 127, 127); */
+	margin-top: 50px;
+}
+
+.screens {
+	width: 100%;
+	height: 600px;
+	background-color: rgb(227, 243, 241);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-center;
+	/* align-items: center; */
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top: 50px;
+	/* position: absolute; */
+}
+#screens_img {
+	width: 100%;
+	padding: 0 50px;
+	/* background-color: rgb(241, 127, 127); */
+	/* margin-top: 5px; */
 }
 
 .back-to-top {
