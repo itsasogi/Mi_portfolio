@@ -13,26 +13,26 @@
 	<link rel="stylesheet" href="css/clues_style.css" />
 </head>
 <body>
-		<header>
+		<header id="navbar">
 				<div id="logo">
-					 <span id="nombre"> 
+					<span id="nombre"> 
 						 Itsaso Gallardo
 					</span>  
 					<span id="job"> 
 						 Graphic + UX/UI Designer
 					</span>
 				</div>
-					<nav>
-						<ul class="nav">
-							<li class="navigation"> 
-								<a id = "active" href="https://www.behance.net/ItsasoGallardo">portfolio</a>
-							</li>
-							<li class="navigation">
-								<a href="file:///Users/itsasogallardo/Desktop/Mi_portfolio/sobre_mi.html">sobre mi</a>
-							</li>
-						</ul>
-					</nav>
-			</header>
+				<nav>
+					<ul class="nav">
+						<li class="navigation"> 
+							<a id = "active" href="https://www.behance.net/ItsasoGallardo">portfolio</a>
+						</li>
+						<li class="navigation">
+							<a href="file:///Users/itsasogallardo/Desktop/Mi_portfolio/sobre_mi.html">sobre mi</a>							</li>
+					</ul>
+				</nav>
+		</header>
+		<span id="intro" class="introLink"></span>
 			<section class="intro">  
 					<div class="presentation">
 						<p id="presentation_tittle">
@@ -60,7 +60,7 @@
 							<span class="subtittle_text">SKILLS</span>
 						</div> 
 						
-						<p class="section_text">Investigación basada en el método Design Thinking, mediante herramientas como encuestas y entrevistas, empathy map, affinity diagram, user journey, Lean UX canvas…</p>
+						<p class="section_text">Investigación basada en el método Design Thinking, mediante herramientas como <span class="subrayado_azul"> <a class="a_verde" href="#research"> encuestas y entrevistas</a>, <span class="subrayado_azul"> <a class="a_verde" href="#user_persona"> user persona</a></span>, <span class="subrayado_azul"> <a class="a_verde" href="#research"> empathy map</a></span>, <span class="subrayado_azul"> <a class="a_verde" href="#research"> affinity diagram</a></span>, <span class="subrayado_azul"> <a class="a_verde" href="#research"> user journey</a></span>, <span class="subrayado_azul"> <a class="a_verde" href="#research"> Lean UX canvas</a> </span> …</p>
 					</div>
 					
 					<div class="tools_container">
@@ -81,7 +81,7 @@
 					</div>
 				</section>
 	
-				<section class="research">
+				<section class="research" id="research">
 						<div class="research_container">
 							<div class="subtittle_container">
 								<span class="rectangle"></span>
@@ -97,7 +97,7 @@
 						<div id="img_research"></div>
 				</section>
 				
-				<section class="user_persona">
+				<section class="user_persona" id="user_persona">
 					<div class="persona_container">
 						<div class="subtittle_container">
 							<span class="rectangle"></span>
@@ -113,7 +113,7 @@
 					</div>
 				</section>
 			
-				<section class="flujos_trabajo">
+				<section class="flujos_trabajo" id="flujos_trabajo">
 								<div class="subtittle_container">
 									<span class="rectangle"></span>
 									<span class="subtittle_text">FLUJOS DE TRABAJO</span>
@@ -125,7 +125,7 @@
 						<img class="flujos_img" src="img/site_map.png" alt="mind map">
 				</section>
 
-				<section class="screens">
+				<section class="screens" id="screens">
 						<div class="subtittle_container">
 							<span class="rectangle"></span>
 							<span class="subtittle_text">SCREENS</span>
@@ -138,21 +138,22 @@
 				</div>
 			</section>
 				
+			<a href="#intro">
 				<div class="back-to-top" style="display: block; opacity: 1;">
-						<a class="semplice-event" data-event-type="helper" data-event="scrollToTop"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
-				<g id="Ebene_3">
-				</g>
-				<g>
+				<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+					<g id="Ebene_3"></g>
+					<g>
 					<polygon points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312 	"></polygon>
-				</g>
+					</g>
 				</svg>
-				</a>
-					</div>
+				</div>
+			</a>
 	<br>
 	<br> 
 	<footer id="footer">
 			© 2019 Itsaso Gallardo. All rights reserved.
 	</footer>
 	<br>
+	<script src="hiddennavbar.js"></script>
 </body>
 </html>
