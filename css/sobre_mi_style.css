@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400|Roboto:300');
+
 *{
 	margin: 0px;
 	padding: 0px;
+}
+html{
+	scroll-behavior: smooth;
 }
 body{
 	font-family: roboto;
@@ -19,24 +24,27 @@ header {
 	z-index: 21;
 }
 a{
-	color:rgb(179, 179, 179);
-	
+	color:rgb(190, 190, 190);	
 }
 a:hover {
 	text-decoration: none; 
 	font-family: "Montserrat";
 	font-weight: normal;
-	font-size: 20px;
+	/* font-size: 20px; */
 	letter-spacing: normal;
 	color:rgb(153, 153, 153);
-	text-decoration: underline;
+	}
+
+	#logo div span {
+		text-decoration: none;
 	}
 
 #nombre {
 	font-family: "Montserrat";
 	font-size: 18px;
 	letter-spacing: 1pt;
-    font-weight: normal;
+	font-weight: normal;
+	color: black;
 	line-height: 20px;
 }
 #job {
@@ -60,9 +68,45 @@ a:hover {
 	font-size: 16px;
 	letter-spacing: normal;
 	margin-left: 30px;
-
 }
+.navigation a:hover {
+	text-decoration: underline;
+}
+
 #active{
-	color: rgb(53, 53, 53);
+	color: rgb(131, 131, 131);
 	
+}
+.info {
+	display:flex;
+	height: 600px;
+	align-items: flex-start;
+	justify-content: space-between;
+	/* background-color: rgb(91, 223, 30); */
+	margin-left: 8%;
+	margin-right: 8%;
+	padding-top: 150px;
+}
+
+.profile_img{
+	width: 500px;
+	margin-left: 100px;
+}
+.profile_text{
+	width: 50%;
+	height: 330px;
+	/* background-color: tomato; */
+	padding-right: 30px;
+	padding-top: 30px;
+	font-size: 16px;
+}
+.footer { 
+	width: 100%;
+	height: 30px;
+	/* background-color: blueviolet; */
+	font-family: "Montserrat";
+	font-weight: lighter;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0pt;
 }

@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400|Roboto:300');
+
 *{
 	margin: 0px;
 	padding: 0px;
+}
+html{
+	scroll-behavior: smooth;
 }
 body{
 	font-family: roboto;
@@ -19,24 +24,27 @@ header {
 	z-index: 21;
 }
 a{
-	color:rgb(179, 179, 179);
-	
+	color:rgb(190, 190, 190);	
 }
 a:hover {
 	text-decoration: none; 
 	font-family: "Montserrat";
 	font-weight: normal;
-	font-size: 20px;
+	/* font-size: 20px; */
 	letter-spacing: normal;
 	color:rgb(153, 153, 153);
-	text-decoration: underline;
+	}
+
+	#logo div span {
+		text-decoration: none;
 	}
 
 #nombre {
 	font-family: "Montserrat";
 	font-size: 18px;
 	letter-spacing: 1pt;
-    font-weight: normal;
+	font-weight: normal;
+	color: black;
 	line-height: 20px;
 }
 #job {
@@ -60,26 +68,32 @@ a:hover {
 	font-size: 16px;
 	letter-spacing: normal;
 	margin-left: 30px;
+}
+.navigation a:hover {
+	text-decoration: underline;
+}
 
-}
 #active{
-	color: rgb(53, 53, 53);
+	color: rgb(131, 131, 131);
 	
 }
 	
+
+
 .intro {
 	padding-left: 8%;
 	padding-right:8%;
 	padding-top:10%;
 	padding-bottom:9%;
 	background: #f7f7f7;
+	position: relative;
 }
 
 .text-presentation {
 	height: 300px;
 	width: 100%;
 	font-family: "Montserrat";
-	font-weight: lighter;
+	font-weight: 100;
 	font-size: 35px;
 	text-align: center;
 	letter-spacing: 1pt;
@@ -99,12 +113,18 @@ a:hover {
 	margin: auto;
   }
   
-
+#toprow{
+	/* width: 100%;
+	height: 1px; */
+	background-color: red;
+	position: absolute;
+	bottom: 71px;
+}
 .row {
 	width: 100%;
 	height: 100%;
 	margin: 0px 0px;
-	padding-top:40px;
+	padding-top: 40px;
 	justify-content:center;
   }
   
